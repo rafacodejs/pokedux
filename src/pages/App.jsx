@@ -1,13 +1,12 @@
 import React from 'react';
-import { Col } from 'antd';
-import { Search } from '../components';
+import { Header, Search, List } from '../components';
 
 const App = () => {
   return (
     <div className='App'>
-      <Col span={8} offset={8}>
-        <Search />
-      </Col>
+      <Header />
+      <Search />
+      <List />
     </div>
   );
 };

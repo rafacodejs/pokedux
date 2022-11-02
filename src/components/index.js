@@ -1,3 +1,5 @@
+import { Header } from './Header';
 import { Search } from './Search';
-import { Card } from './Card';
-export { Search, Card };
+import { List } from './List';
+
+export { Header, Search, List };
