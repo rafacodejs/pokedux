@@ -1,18 +1,15 @@
-import React from 'react';
+import React, { Profiler } from 'react';
 import { Card } from './Card';
 
 const List = ({ pokemons }) => {
+  console.log(pokemons);
   return (
     <section className='text-white flex flex-wrap justify-center items-center p-2'>
-      {pokemons.map((poke) => (
-        <Card  />
-      ))}
+      {pokemons.map((poke) => {
+        return <Card key={poke.name} name={poke.name} />;
+      })}
     </section>
   );
-};
-
-List.defaultProps = {
-  pokemons: Array(10).fill(''),
 };
 
 export { List };
